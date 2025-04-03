@@ -1,0 +1,148 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.content {
+    flex: 1;
+}
+
+footer {
+    background: #222;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    width: 100%;
+}
+.navbar-nav .nav-item.active {
+    background-color: #ffc107; /* Màu vàng */
+    border-radius: 5px; /* Bo góc nhẹ */
+}
+
+.navbar-nav .nav-item.active .nav-link {
+    color: #000 !important; /* Đổi màu chữ thành đen để dễ đọc */
+    font-weight: bold;
+}
+
+ /* Đặt mặc định cho banner */
+ #carouselExample {
+    max-height: 800px; /* Giảm chiều cao của carousel */
+}
+
+.carousel-inner img {
+    object-fit: cover; /* Giữ tỷ lệ ảnh */
+    height: 800px; /* Điều chỉnh chiều cao của ảnh */
+}
+
+.carousel-caption {
+    top: 0;
+    text-align: center;
+}
+
+.carousel-caption h1 {
+    font-size: 2rem; /* Giảm kích thước chữ tiêu đề */
+}
+
+.carousel-caption p {
+    font-size: 1rem; /* Giảm kích thước chữ mô tả */
+}
+
+.carousel-caption .form-control {
+    width: 500px; /* Giảm chiều rộng của ô tìm kiếm */
+}
+
+.carousel-caption .btn {
+    font-size: 0.9rem; /* Giảm kích thước chữ của nút tìm */
+}
+
+/* Responsive */
+@media (max-width: 1200px) {
+    .carousel-inner img {
+        height: 250px;
+    }
+
+    .carousel-caption h1 {
+        font-size: 1.75rem;
+    }
+
+    .carousel-caption p {
+        font-size: 0.9rem;
+    }
+
+    .carousel-caption .form-control {
+        width: 200px;
+    }
+
+    .carousel-caption .btn {
+        font-size: 0.85rem;
+    }
+}
+
+@media (max-width: 992px) {
+    .carousel-inner img {
+        height: 200px;
+    }
+
+    .carousel-caption h1 {
+        font-size: 1.5rem;
+    }
+
+    .carousel-caption p {
+        font-size: 0.85rem;
+    }
+
+    .carousel-caption .form-control {
+        width: 180px;
+    }
+
+    .carousel-caption .btn {
+        font-size: 0.8rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .carousel-inner img {
+        height: 180px;
+    }
+
+    .carousel-caption h1 {
+        font-size: 1.25rem;
+    }
+
+    .carousel-caption p {
+        font-size: 0.75rem;
+    }
+
+    .carousel-caption .form-control {
+        width: 150px;
+    }
+
+    .carousel-caption .btn {
+        font-size: 0.75rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .carousel-inner img {
+        height: 250px;
+    }
+
+    .carousel-caption h1 {
+        font-size: 1rem;
+    }
+
+    .carousel-caption p {
+        font-size: 0.7rem;
+    }
+
+    .carousel-caption .form-control {
+        width: 130px;
+    }
+
+    .carousel-caption .btn {
+        font-size: 0.7rem;
+    }
+}
