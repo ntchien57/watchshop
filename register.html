@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đăng Ký Tài Khoản</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css"> <!-- Bootstrap 5.2 -->
+    <link rel="stylesheet" href="css/style.css"> <!-- CSS tùy chỉnh -->
+    <!-- Thêm Font Awesome vào phần <head> -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- MENU -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="images/logo.png" alt="Logo" width="150">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#portfolio">Portfolio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#pricing">Pricing</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                    <li class="nav-item"><a class="nav-link btn btn-success fw-bold text-white" href="login.html">Đăng nhập / Đăng ký</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container d-flex justify-content-center align-items-center" style="height: 100vh;">
+        <div class="card w-100" style="max-width: 400px;">
+            <div class="card-header bg-success text-white text-center">
+                <h4>Đăng Ký Tài Khoản</h4>
+            </div>
+            <div class="card-body">
+                <form id="formRegister">
+                    <!-- Họ và tên -->
+                    <div class="mb-3">
+                        <label for="fullname" class="form-label">Họ và tên</label>
+                        <input type="text" class="form-control" id="fullname" name="fullname" placeholder="Nhập họ và tên của bạn">
+                    </div>
+
+                    <!-- Email -->
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Email</label>
+                        <input type="email" class="form-control" id="email" name="email" placeholder="Nhập email của bạn">
+                    </div>
+
+                    <!-- Mật khẩu -->
+                    <div class="mb-3">
+                        <label for="password" class="form-label">Mật khẩu</label>
+                        <input type="password" class="form-control" id="password" name="password" placeholder="Nhập mật khẩu của bạn">
+                    </div>
+
+                    <!-- Xác nhận mật khẩu -->
+                    <div class="mb-3">
+                        <label for="confirm_password" class="form-label">Xác nhận mật khẩu</label>
+                        <input type="password" class="form-control" id="confirm_password" name="confirm_password" placeholder="Nhập lại mật khẩu của bạn">
+                    </div>
+
+                    <!-- Nút Đăng ký -->
+                    <div class="mb-3">
+                        <button type="submit" class="btn btn-success w-100">Đăng Ký</button>
+                    </div>
+
+                    <!-- Liên kết đăng nhập -->
+                    <div class="text-center">
+                        <p>Đã có tài khoản? <a href="login.html" class="text-decoration-none">Đăng nhập</a></p>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer class="bg-dark text-white text-center py-3">
+        <div class="container">
+            <p>&copy; 2025 Watch Shop. All Rights Reserved.</p>
+            <p>Chi nhánh: Hà Nội | TP.HCM | Đà Nẵng</p>
+            <div class="footer-links">
+                <a href="#" class="text-white me-2">Facebook</a>
+                <a href="#" class="text-white me-2">Twitter</a>
+                <a href="#" class="text-white">Instagram</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/jquery.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

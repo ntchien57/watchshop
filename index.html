@@ -29,7 +29,7 @@
                     <li class="nav-item"><a class="nav-link" href="#portfolio">Portfolio</a></li>
                     <li class="nav-item"><a class="nav-link" href="#pricing">Pricing</a></li>
                     <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
-                    <!-- <li class="nav-item"><a class="nav-link btn btn-success fw-bold text-white" href="login.html">Đăng nhập / Đăng ký</a></li> -->
+                    <li class="nav-item"><a class="nav-link btn btn-success fw-bold text-white" href="login.html">Đăng nhập / Đăng ký</a></li>
                 </ul>
             </div>
         </div>
@@ -93,24 +93,21 @@
             <h2 class="text-center mb-5">Dịch vụ của chúng tôi</h2>
             <!-- Dịch vụ 1: Bảo Hành Đồng Hồ -->
             <div class="col-md-4 text-center">
-                <i class="fas fa-clock" style="font-size: 50px; color: #007bff;"></i>
+                <i class="fas fa-clock py-3" style="font-size: 50px;"></i>
                 <h3>Bảo Hành Đồng Hồ</h3>
                 <p>Cung cấp dịch vụ bảo hành chính hãng cho tất cả các sản phẩm đồng hồ của chúng tôi.</p>
-                <a href="service-details.html" class="btn btn-outline-primary">Xem chi tiết</a>
             </div>
             <!-- Dịch vụ 2: Sửa Chữa & Bảo Dưỡng -->
             <div class="col-md-4 text-center">
-                <i class="fas fa-wrench" style="font-size: 50px; color: #007bff;"></i>
+                <i class="fas fa-wrench py-3" style="font-size: 50px;"></i>
                 <h3>Sửa Chữa & Bảo Dưỡng</h3>
                 <p>Dịch vụ sửa chữa, bảo dưỡng và thay pin cho đồng hồ các thương hiệu khác nhau.</p>
-                <a href="service-details.html" class="btn btn-outline-primary">Xem chi tiết</a>
             </div>
             <!-- Dịch vụ 3: Thu cũ đổi mới -->
             <div class="col-md-4 text-center">
-                <i class="fas fa-undo-alt" style="font-size: 50px; color: #007bff;"></i>
+                <i class="fas fa-undo-alt py-3" style="font-size: 50px;"></i>
                 <h3>Thu cũ đổi mới</h3>
                 <p>Chúng tôi cung cấp nhiều chương trình ưu đãi và quà tặng hấp dẫn cho khách hàng.</p>
-                <a href="service-details.html" class="btn btn-outline-primary">Xem chi tiết</a>
             </div>
         </div>
 
@@ -125,7 +122,7 @@
                         <h5 class="card-title">Đồng Hồ KOI</h5>
                         <p class="card-text">Đồng hồ cao cấp với thiết kế sang trọng, độ chính xác cao.</p>
                         <p class="card-text"><strong>2,500,000 VND</strong></p>
-                        <a href="product-details.html" class="btn btn-outline-primary">Xem chi tiết</a>
+                        <a href="product1-detail.html" class="btn btn-outline-success">Mua Ngay</a>
                     </div>
                 </div>
             </div>
@@ -138,7 +135,7 @@
                         <h5 class="card-title">Đồng Hồ Casio</h5>
                         <p class="card-text">Đồng hồ thể thao với tính năng chống nước cho các hoạt động ngoài trời.</p>
                         <p class="card-text"><strong>3,000,000 VND</strong></p>
-                        <a href="product-details.html" class="btn btn-outline-primary">Xem chi tiết</a>
+                        <a href="product2-detail.html" class="btn btn-outline-success">Mua Ngay</a>
                     </div>
                 </div>
             </div>
@@ -151,7 +148,7 @@
                         <h5 class="card-title">Đồng Hồ Titon</h5>
                         <p class="card-text">Đồng hồ lịch lãm với mặt kính sapphire chống xước cao cấp.</p>
                         <p class="card-text"><strong>4,000,000 VND</strong></p>
-                        <a href="product-details.html" class="btn btn-outline-primary">Xem chi tiết</a>
+                        <a href="product3-detail.html" class="btn btn-outline-success">Mua Ngay</a>
                     </div>
                 </div>
             </div>
@@ -164,7 +161,7 @@
                         <h5 class="card-title">Đồng Hồ Rolex</h5>
                         <p class="card-text">Đồng hồ cơ tự động với thiết kế cổ điển, sang trọng cho phái mạnh.</p>
                         <p class="card-text"><strong>5,000,000 VND</strong></p>
-                        <a href="product-details.html" class="btn btn-outline-primary">Xem chi tiết</a>
+                        <a href="product4-detail.html" class="btn btn-outline-success">Mua Ngay</a>
                     </div>
                 </div>
             </div>
@@ -348,7 +345,7 @@
     <!-- Modal -->
     <div class="modal fade" id="registerModal" tabindex="-1" aria-labelledby="registerModalLabel" aria-hidden="true">
         <div class="modal-dialog">
-            <form class="modal-content" method="POST" action="submit_service.php">
+            <form id="modalForm" class="modal-content">
                 <div class="modal-header">
                     <h5 class="modal-title" id="registerModalLabel">Đăng ký dịch vụ</h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Đóng"></button>
@@ -358,19 +355,19 @@
                     <!-- Họ tên -->
                     <div class="mb-3">
                         <label for="fullname" class="form-label">Họ tên</label>
-                        <input type="text" class="form-control" id="fullname" name="fullname" required>
+                        <input type="text" class="form-control" id="fullname" name="fullname">
                     </div>
 
                     <!-- Số điện thoại -->
                     <div class="mb-3">
                         <label for="phone" class="form-label">Số điện thoại</label>
-                        <input type="tel" class="form-control" id="phone" name="phone" required>
+                        <input type="tel" class="form-control" id="phone" name="phone">
                     </div>
 
                     <!-- Email -->
                     <div class="mb-3">
                         <label for="email" class="form-label">Email</label>
-                        <input type="email" class="form-control" id="emailModal" name="email" required>
+                        <input type="email" class="form-control" id="emailModal" name="email">
                     </div>
 
                     <!-- Các lựa chọn dịch vụ -->

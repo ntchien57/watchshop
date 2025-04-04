@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop Đồng Hồ</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css"> <!-- Bootstrap 5.2 -->
+    <link rel="stylesheet" href="css/style.css"> <!-- CSS tùy chỉnh -->
+    <!-- Thêm Font Awesome vào phần <head> -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+
+</head>
+
+<body>
+    <!-- MENU -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="images/logo.png" alt="Logo" width="150">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#portfolio">Portfolio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#pricing">Pricing</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                    <li class="nav-item"><a class="nav-link btn btn-success fw-bold text-white" href="login.html">Đăng
+                            nhập / Đăng ký</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- BANNER với Bootstrap Carousel -->
+    <section id="banner" class="mt-5">
+        <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="images/banner/banner1.jpg" class="d-block w-100" alt="Banner 1">
+                </div>
+                <div class="carousel-item">
+                    <img src="images/banner/banner2.jpg" class="d-block w-100" alt="Banner 2">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            </button>
+            <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
+                <h1 class="text-white">Chào mừng đến với Watch Shop</h1>
+                <p class="text-white">Chúng tôi mang đến những chiếc đồng hồ đẳng cấp</p>
+                <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Tìm kiếm...">
+                    <button class="btn btn-primary" type="submit">Tìm</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- ABOUT -->
+    <div class="container">
+
+        <h2 class="section-title mt-5 text-center">Giới Thiệu Về Watch Shop</h2>
+
+        <div class="about-text">
+            <p>Watch Shop chuyên cung cấp các loại đồng hồ cao cấp từ những thương hiệu nổi tiếng, cam kết mang đến cho
+                khách hàng những sản phẩm chất lượng nhất. Chúng tôi hiểu rằng một chiếc đồng hồ không chỉ là công cụ
+                xem giờ mà còn là món phụ kiện thể hiện phong cách và đẳng cấp. Chính vì vậy, mỗi sản phẩm tại Watch
+                Shop đều được chọn lọc kỹ lưỡng, đảm bảo tính chính hãng và độ bền vượt trội. Mỗi chiếc đồng hồ là một
+                kiệt tác, được tạo ra từ các chất liệu cao cấp, kỹ thuật chế tác tinh xảo, mang đến sự hoàn hảo trong
+                từng chi tiết.</p>
+
+            <p>Với phương châm "Chất lượng là ưu tiên hàng đầu", chúng tôi chỉ phân phối những sản phẩm đồng hồ từ các
+                thương hiệu uy tín và có danh tiếng trên thế giới, đảm bảo các sản phẩm được bảo hành chính hãng. Chúng
+                tôi không ngừng cập nhật các mẫu đồng hồ mới nhất, luôn đi đầu trong xu hướng thời trang, giúp khách
+                hàng có thể dễ dàng tìm thấy chiếc đồng hồ phù hợp với phong cách và nhu cầu của mình.</p>
+            
+                <img src="images/about.png" alt="About Us" class="img-fluid rounded shadow-sm w-100 my-5">
+
+            <p>Không chỉ chú trọng đến chất lượng sản phẩm, chúng tôi đặc biệt quan tâm đến dịch vụ chăm sóc khách hàng.
+                Mỗi khách hàng khi đến với Watch Shop đều được tư vấn tận tình bởi đội ngũ nhân viên chuyên nghiệp và
+                nhiệt tình. Chúng tôi luôn sẵn sàng lắng nghe và tư vấn, giúp bạn chọn lựa chiếc đồng hồ lý tưởng, phù
+                hợp với phong cách cá nhân và mục đích sử dụng. Chúng tôi cũng cung cấp các dịch vụ hỗ trợ kỹ thuật, bảo
+                dưỡng đồng hồ định kỳ, bảo hành toàn diện để mang đến cho khách hàng trải nghiệm tuyệt vời nhất.</p>
+
+            <p>Với Watch Shop, chúng tôi không chỉ bán đồng hồ, mà còn mang đến một phần không thể thiếu trong cuộc sống
+                của bạn – một biểu tượng của đẳng cấp và sự tinh tế. Chúng tôi cam kết mang lại những sản phẩm đồng hồ
+                tốt nhất, cùng với dịch vụ chăm sóc khách hàng hoàn hảo, giúp mỗi khách hàng luôn cảm thấy hài lòng và
+                an tâm khi mua sắm tại cửa hàng của chúng tôi.</p>
+
+            <p>Hãy đến và khám phá bộ sưu tập đồng hồ tuyệt vời của chúng tôi tại Watch Shop – nơi đẳng cấp và chất
+                lượng hội tụ. Chúng tôi tự hào là lựa chọn hàng đầu của những tín đồ yêu thích đồng hồ tại Việt Nam và
+                trên thế giới.</p>
+        </div>
+    </div>
+
+
+
+
+    <!-- FOOTER -->
+    <footer class="bg-dark text-white text-center py-3">
+        <div class="container">
+            <p>&copy; 2025 Watch Shop. All Rights Reserved.</p>
+            <p>Chi nhánh: Hà Nội | TP.HCM | Đà Nẵng</p>
+            <div class="footer-links">
+                <a href="#" class="text-white me-2">Facebook</a>
+                <a href="#" class="text-white me-2">Twitter</a>
+                <a href="#" class="text-white">Instagram</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script> <!-- Bootstrap 5.2 -->
+    <script src="js/jquery.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
