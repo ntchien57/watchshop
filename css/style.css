@@ -146,3 +146,106 @@ footer {
         font-size: 0.7rem;
     }
 }
+
+.testimonial-box {
+    background-color: #ffffff;
+    border-radius: 15px;
+    padding: 25px;
+    margin: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.testimonial-box img {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 15px;
+    border: 2px solid #007bff;
+}
+
+.testimonial-box p {
+    font-style: italic;
+    font-size: 0.95rem;
+    color: #555;
+}
+
+.testimonial-box .name {
+    margin-top: 10px;
+    font-weight: bold;
+    color: #007bff;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: #007bff;
+    border-radius: 50%;
+    padding: 20px;
+}
+
+#contact {
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    padding: 40px;
+}
+
+#contact h2 {
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: #333;
+}
+
+.contact-info p {
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+}
+
+.contact-info a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.contact-info a:hover {
+    text-decoration: underline;
+}
+
+#contact .form-group label {
+    font-weight: 600;
+}
+
+#contact .form-control {
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    transition: border-color 0.3s ease;
+}
+
+#contact .form-control:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.3);
+}
+
+#contact .btn {
+    font-weight: 600;
+    padding: 12px;
+    font-size: 1.1rem;
+}
+
+#contact .btn:hover {
+    background-color: #0056b3;
+    border-color: #0056b3;
+}
+
+#contact .btn:focus {
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+@media (max-width: 768px) {
+    #contact .row {
+        flex-direction: column;
+    }
+}
